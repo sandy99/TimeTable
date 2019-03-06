@@ -10,7 +10,7 @@ node('iOS Node') {
             extensions: [], submoduleCfg: [],
             userRemoteConfigs: [[
                 name: 'github',
-                url: 'https://github.com/mmorejon/time-table.git'
+                url: 'https://github.com/sandy99/TimeTable.git'
             ]]
         ])
 
@@ -43,6 +43,6 @@ node('iOS Node') {
 
     stage ('Notify') {
         // Send slack notification
-        slackSend channel: '#my-team', message: 'Time Table - Successfully', teamDomain: 'my-team', token: 'my-token'
+       // slackSend channel: '#mobile-practice', message: 'Time Table - Successfully', teamDomain: 'my-team', token: 'my-token'
     }
 }
