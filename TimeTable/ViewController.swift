@@ -30,6 +30,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         print("test")
         print("test")
         print("test")
+        print("test")
 
     }
 
