@@ -16,10 +16,4 @@ node{
         // Build project
         sh 'xcodebuild -scheme "TimeTable" -configuration "Release"'
     }
-
-    stages {
-        stage('Deploy') {
-            echo 'Deployed successfully'
-        }
-    }
 }
