@@ -16,4 +16,17 @@ node{
         // Build project
         sh 'xcodebuild -scheme "TimeTable" -configuration "Release"'
     }
+
+    stages {
+        stage('Deploy') {
+            when {
+              expression {
+                currentBuild.result == null || currentBuild.result == 'SUCCESS' 
+              }
+            }
+            steps {
+                sh 'make publish'
+            }
+        }
+    }
 }
