@@ -1,4 +1,4 @@
-node('iOS Node') {
+node('KiwiTech') {
     stage('Checkout/Build') {
         
         // Checkout files.
