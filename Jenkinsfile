@@ -1,4 +1,5 @@
-stage('Checkout/Build') {
+node{
+    stage('Checkout/Build') {
         
         // Checkout files.
         checkout([
@@ -15,3 +16,4 @@ stage('Checkout/Build') {
         // Build project
         sh 'xcodebuild -scheme "TimeTable" -configuration "Debug"'
     }
+}
