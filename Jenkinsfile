@@ -19,7 +19,8 @@ node{
        sh 'xcodebuild -scheme "TimeTable" -configuration "Release"'
        // archive project
        sh 'xcodebuild archive -archivePath "./build/TimeTable.xcarchive" -project "TimeTable.xcodeproj"  -scheme "TimeTable" -configuration "Release"'
-
+       // exportArchive archive
+       sh 'xcodebuild -exportArchive -archivePath "./build/TimeTable.xcarchive" -exportOptionsPlist "./TimeTable/exportOptions.plist" -exportPath "./build/TimeTable.ipa"'
     }
 }
 
