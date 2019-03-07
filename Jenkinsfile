@@ -13,7 +13,11 @@ node{
                 ]]
             ])
         
-        // Build project
-        sh 'xcodebuild -scheme "TimeTable" -configuration "Release"'
+        // clean project
+       sh 'xcodebuild clean -project "TimeTable.xcodeproj" -scheme "TimeTable"'
+       // build project
+       sh 'xcodebuild -scheme "TimeTable" -configuration "Release"'
     }
 }
+
+
