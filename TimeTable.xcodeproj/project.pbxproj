@@ -17,20 +17,8 @@
 		D1B623A21BC459AA006E4B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B623A01BC459AA006E4B0E /* Main.storyboard */; };
 		D1B623A41BC459AA006E4B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B623A31BC459AA006E4B0E /* Assets.xcassets */; };
 		D1B623A71BC459AA006E4B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B623A51BC459AA006E4B0E /* LaunchScreen.storyboard */; };
-		D1B623B21BC459AA006E4B0E /* TimeTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B623B11BC459AA006E4B0E /* TimeTableTests.swift */; };
 		D1B623BD1BC46336006E4B0E /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B623BC1BC46336006E4B0E /* TimeTable.swift */; };
-		D1B623BE1BC46336006E4B0E /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B623BC1BC46336006E4B0E /* TimeTable.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D1B623AE1BC459AA006E4B0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D1B623911BC459AA006E4B0E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D1B623981BC459AA006E4B0E;
-			remoteInfo = TimeTable;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1FD338CA72BC89084DCCA2C3 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
@@ -45,7 +33,6 @@
 		D1B623A31BC459AA006E4B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1B623A61BC459AA006E4B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1B623A81BC459AA006E4B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1B623AD1BC459AA006E4B0E /* TimeTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B623B11BC459AA006E4B0E /* TimeTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableTests.swift; sourceTree = "<group>"; };
 		D1B623B31BC459AA006E4B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1B623BC1BC46336006E4B0E /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
@@ -63,13 +50,6 @@
 				A3D96AAF309ABE35EAB980FF /* CoreTelephony.framework in Frameworks */,
 				D0144B1687A9C2067239E181 /* SystemConfiguration.framework in Frameworks */,
 				43A31993F7CAE02B2D660F8F /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1B623AA1BC459AA006E4B0E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				D1B623991BC459AA006E4B0E /* TimeTable.app */,
-				D1B623AD1BC459AA006E4B0E /* TimeTableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,24 +131,6 @@
 			productReference = D1B623991BC459AA006E4B0E /* TimeTable.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D1B623AC1BC459AA006E4B0E /* TimeTableTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D1B623B91BC459AA006E4B0E /* Build configuration list for PBXNativeTarget "TimeTableTests" */;
-			buildPhases = (
-				D1B623A91BC459AA006E4B0E /* Sources */,
-				D1B623AA1BC459AA006E4B0E /* Frameworks */,
-				D1B623AB1BC459AA006E4B0E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D1B623AF1BC459AA006E4B0E /* PBXTargetDependency */,
-			);
-			name = TimeTableTests;
-			productName = TimeTableTests;
-			productReference = D1B623AD1BC459AA006E4B0E /* TimeTableTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,11 +145,6 @@
 						DevelopmentTeam = 8HPANVN593;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Manual;
-					};
-					D1B623AC1BC459AA006E4B0E = {
-						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0810;
-						TestTargetID = D1B623981BC459AA006E4B0E;
 					};
 				};
 			};
@@ -206,7 +162,6 @@
 			projectRoot = "";
 			targets = (
 				D1B623981BC459AA006E4B0E /* TimeTable */,
-				D1B623AC1BC459AA006E4B0E /* TimeTableTests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,13 +174,6 @@
 				D1B623A71BC459AA006E4B0E /* LaunchScreen.storyboard in Resources */,
 				D1B623A41BC459AA006E4B0E /* Assets.xcassets in Resources */,
 				D1B623A21BC459AA006E4B0E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1B623AB1BC459AA006E4B0E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,24 +190,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1B623A91BC459AA006E4B0E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D1B623B21BC459AA006E4B0E /* TimeTableTests.swift in Sources */,
-				D1B623BE1BC46336006E4B0E /* TimeTable.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D1B623AF1BC459AA006E4B0E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D1B623981BC459AA006E4B0E /* TimeTable */;
-			targetProxy = D1B623AE1BC459AA006E4B0E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D1B623A01BC459AA006E4B0E /* Main.storyboard */ = {
@@ -382,7 +313,7 @@
 				);
 				INFOPLIST_FILE = TimeTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = private.TimeTable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiwitech.time;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8c06f775-c218-4d45-94a2-e79e880ecf60";
 				PROVISIONING_PROFILE_SPECIFIER = "KiwiTech Enterprise Release Star";
@@ -404,38 +335,12 @@
 				);
 				INFOPLIST_FILE = TimeTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = private.TimeTable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiwitech.time;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8c06f775-c218-4d45-94a2-e79e880ecf60";
 				PROVISIONING_PROFILE_SPECIFIER = "KiwiTech Enterprise Release Star";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0.1;
-			};
-			name = Release;
-		};
-		D1B623BA1BC459AA006E4B0E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TimeTableTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = PentLab.TimeTableTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0.1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeTable.app/TimeTable";
-			};
-			name = Debug;
-		};
-		D1B623BB1BC459AA006E4B0E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TimeTableTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = PentLab.TimeTableTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0.1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeTable.app/TimeTable";
 			};
 			name = Release;
 		};
@@ -456,15 +361,6 @@
 			buildConfigurations = (
 				D1B623B71BC459AA006E4B0E /* Debug */,
 				D1B623B81BC459AA006E4B0E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D1B623B91BC459AA006E4B0E /* Build configuration list for PBXNativeTarget "TimeTableTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D1B623BA1BC459AA006E4B0E /* Debug */,
-				D1B623BB1BC459AA006E4B0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
