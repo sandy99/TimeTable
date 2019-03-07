@@ -17,6 +17,9 @@ node{
        sh 'xcodebuild clean -project "TimeTable.xcodeproj" -scheme "TimeTable"'
        // build project
        sh 'xcodebuild -scheme "TimeTable" -configuration "Release"'
+       // archive project
+       sh 'xcodebuild archive -archivePath "./build/TimeTable.xcarchive" -project "TimeTable.xcodeproj"  -scheme "TimeTable" -configuration "Release"'
+
     }
 }
 
