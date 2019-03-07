@@ -14,6 +14,6 @@ node{
             ])
         
         // Build project
-        sh 'xcodebuild -scheme "TimeTable" -configuration "Debug"'
+        sh 'xcodebuild -scheme "TimeTable" -configuration "Release"'
     }
 }
