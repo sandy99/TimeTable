@@ -1,5 +1,4 @@
-node('KiwiTech') {
-    stage('Checkout/Build') {
+stage('Checkout/Build') {
         
         // Checkout files.
         checkout([
@@ -16,4 +15,3 @@ node('KiwiTech') {
         // Build project
         sh 'xcodebuild -scheme "TimeTable" -configuration "Debug"'
     }
-}
