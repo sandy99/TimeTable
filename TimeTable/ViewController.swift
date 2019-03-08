@@ -26,7 +26,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         pickerView2.selectRow(4, inComponent: 0, animated: false)
         labelResult.text = "16"
         timeTable = TimeTable()
-        print("test")
+        print()
     }
 
     override func didReceiveMemoryWarning() {
